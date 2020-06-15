@@ -124,7 +124,7 @@ mainMenu:
 
     # This is shown when using firefox and other browsers which are not supported.
     browserWarning: >-
-        Sorry, aber das Spiel wird in deinem Browser langsam laufen! Erwerbe die Standalone-Version oder downloade Chrome für die beste Erfahrung!
+        Sorry, aber das Spiel wird in deinem Browser langsam laufen! Erwerbe die Standalone-Version oder installiere Chrome für die beste Erfahrung!
 
     savegameLevel: Level <x>
     savegameLevelUnknown: Unbekanntes Level
@@ -168,7 +168,7 @@ dialogs:
         showKeybindings: Kürzel anzeigen
 
     importSavegameError:
-        title: Import Fehler
+        title: Importfehler
         text: >-
             Fehler beim Importieren deines Spielstands:
 
@@ -178,12 +178,12 @@ dialogs:
             Dein Spielstand wurde erfolgreich importiert
 
     gameLoadFailure:
-        title: Der Spielstand ist kaputt
+        title: Der Spielstand ist defekt
         text: >-
             Der Spielstand konnte nicht geladen werden.
 
     confirmSavegameDelete:
-        title: Bestätige Löschen
+        title: Bestätige löschen
         text: >-
             Bist du sicher, dass du das Spiel löschen willst?
 
@@ -195,7 +195,7 @@ dialogs:
     restartRequired:
         title: Neustart benötigt
         text: >-
-            Du muss das Spiel neu starten, um die Einstellungen anzuwenden
+            Du muss das Spiel neu starten, um die Einstellungen anzuwenden.
 
     editKeybinding:
         title: Ändere Tastenbelegung
@@ -203,7 +203,7 @@ dialogs:
 
     resetKeybindingsConfirmation:
         title: Tastenbelegung zurücksetzen
-        desc: Das wird all deine Tastenbelegungen auf den Standard zurücksetzen. Bitte bestätige.
+        desc: Das wird all deine Tastenbelegungen auf den Standard zurücksetzen. Bitte bestätigen.
 
     keybindingsResetOk:
         title: Tastenbelegung zurückgesetzt
@@ -239,7 +239,7 @@ dialogs:
             Blueprints werden erst in Level 12 freigeschalten!
 
     keybindingsIntroduction:
-        title: Nützliche Tastenbelegung
+        title: Nützliche Tastenbelegungen
         desc: >-
             Dieses Spiel hat viele Tastenbelegungen, die es einfacher machen, Fabriken zu bauen.
             Hier sind ein paar, aber prüfe am besten die <strong>Tastenkürzel-Einstellungen</strong>!<br><br>
@@ -254,16 +254,14 @@ dialogs:
     markerDemoLimit:
         desc: Du kannst nur 2 benutzerdefinierte Marker in der Demo benutzen. Hol dir die Standalone um unendlich viele Marker zu benutzen!
     massCutConfirm:
-        title: Confirm cut
+        title: Ausschneiden bestätigen
         desc: >-
-            You are cutting a lot of buildings (<count> to be exact)! Are you sure you
-            want to do this?
+            Du schneidest sehr viele Gebäude aus (<count> um genau zu sein)! Bist du dir sicher?
 
     exportScreenshotWarning:
-        title: Export screenshot
+        title: Sceenshot exportieren
         desc: >-
-            You requested to export your base as a screenshot. Please note that this can
-            be quite slow for a big base and even crash your game!
+            Du möchtest einen Sceenshot deiner Basis exportieren. Bitte bedenke, dass das sehr lange dauern kann und dein Spiel evtl. sogar abstürzt.
 
 ingame:
     # This is shown in the top left corner and displays useful keybindings in
@@ -273,14 +271,14 @@ ingame:
         selectBuildings: Wähle Areal
         stopPlacement: Stoppe Platzierung
         rotateBuilding: Rotiere Gebäude
-        placeMultiple: Platziere Mehrere
+        placeMultiple: Platziere mehrere
         reverseOrientation: Umgedrehte Orientierung
         disableAutoOrientation: Deaktiviere Auto-Orientierung
         toggleHud: Umschaltung HUD Sichtbarkeit
         placeBuilding: Platziere Gebäude
         createMarker: Erstelle Marker
         delete: Löschen
-        pasteLastBlueprint: Paste last blueprint
+        pasteLastBlueprint: letzten Blueprint einfügen
 
     # Everything related to placing buildings (I.e. as soon as you selected a building
     # from the toolbar)
@@ -297,8 +295,8 @@ ingame:
             speed: Geschw.
             range: Reichweite
             storage: Kapazität
-            oneItemPerSecond: 1 Item / s
-            itemsPerSecond: <x> Items / s
+            oneItemPerSecond: 1 Teil / s
+            itemsPerSecond: <x> Teile / s
             itemsPerSecondDouble: (x2)
 
             tiles: <x> Felder
@@ -308,7 +306,7 @@ ingame:
         # <level> is replaced by the actual level, so this gets 'Level 03' for example.
         levelTitle: Level <level>
         completed: Abgeschlossen
-        unlockText: <reward> freigeschalten!
+        unlockText: <reward> freigeschaltet!
         buttonNextLevel: Nächstes Level
 
     # Notifications on the lower right
@@ -319,7 +317,7 @@ ingame:
     # Mass select information, this is when you hold CTRL and then drag with your mouse
     # to select multiple buildings
     massSelect:
-        infoText: Press <keyCut> to cut, <keyCopy> to copy, <keyDelete> to remove and <keyCancel> to cancel.
+        infoText: Drücke <keyCut> zum Ausschneiden, <keyCopy> zum kopieren, <keyDelete> zum Entfernen uns <keyCancel> zum Abbrechen.
 
     # The "Upgrades" window
     shop:
@@ -426,11 +424,11 @@ buildings:
     underground_belt: # Internal name for the Tunnel
         default:
             name: &underground_belt Tunnel
-            description: Erlaubt dir, Formen und Farbe unter Gebäuden und Förderbändern durchzuleiten.
+            description: Erlaubt dir, Formen und Farben unter Gebäuden und Förderbändern durchzuleiten.
 
         tier2:
             name: Tunnel Level II
-            description: Erlaubt dir, Formen und Farbe unter Gebäuden und Förderbändern durchzuleiten.
+            description: Erlaubt dir, Formen und Farben unter Gebäuden und Förderbändern durchzuleiten.
 
     splitter: # Internal name for the Balancer
         default:
@@ -459,8 +457,8 @@ buildings:
             description: Rotiert Formen im Uhrzeigersinn um 90 Grad.
 
         ccw:
-            name: Rotate (CCW)
-            description: Rotates shapes counter clockwise by 90 degrees.
+            name: Rotierer (CCW)
+            description: Rotiert Formen gegen den Uhrzeigersinn um 90 Grad.
 
     stacker:
         default:
@@ -488,7 +486,7 @@ buildings:
     trash:
         default:
             name: &trash Mülleimer
-            description: Akzeptiert Formen und Farben aus jeder Richtung und zerstört sie. Für immer ...
+            description: Akzeptiert Formen und Farben aus jeder Richtung und zerstört sie. Für immer...
 
         storage:
             name: Lager
@@ -536,12 +534,12 @@ storyRewards:
         desc: Du hast eine zweite Variante des <strong>Rotierers</strong> freigeschaltet! Damit können Items gegen den Uhrzeigensinn gedreht werden. Wähle den Rotierer aus und <strong>drücke 'T', um auf verschiedene Varianten zuzugreifen</strong>!
 
     reward_miner_chainable:
-        title: Chaining Extractor
-        desc: You have unlocked the <strong>chaining extractor</strong>! It can <strong>forward its resources</strong> to other extractors so you can more efficiently extract resources!
+        title: Ketten-Extrahierer
+        desc: Der <strong>Extrahierer (Kette)</strong> wurde freigeschaltet! Er kann seine Erträge in den nebenliegenden Extrahierer <strong>weiterleiten</strong> um so Ressourcen effektiver abzubauen!
 
     reward_underground_belt_tier_2:
-        title: Tunnel Tier II
-        desc: You have unlocked a new variant of the <strong>tunnel</strong> - It has a <strong>bigger range</strong>, and you can also mix-n-match those tunnels now!
+        title: Tunnel Stufe II
+        desc: Eine neue variante des  <strong>Tunnels</strong> wurde freigeschaltet. - Er hat eine  <strong>größere Reichweite</strong>, und Du kannst diese Tunnel jetzt auch mischen und anpassen!
 
     reward_splitter_compact:
         title: Compact Balancer
@@ -593,7 +591,7 @@ settings:
         dev: Entwicklung
         staging: Beta
         prod: Produktion
-    buildDate: Gebaut <at-date>
+    buildDate: erstellt <at-date>
 
     labels:
         uiScale:
@@ -662,15 +660,15 @@ settings:
                 Ändere die Sprache. Alle Übersetzungen werden von Nutzern erstellt und sind möglicherweise unvollständig!
 
         movementSpeed:
-            title: Movement speed
-            description: Changes how fast the view moves when using the keyboard.
+            title: Bewegungsgeschwindigkeit
+            description: Ändert, wie schnell sich die Ansicht bei Verwendung der Tastatur bewegt.
             speeds:
-                super_slow: Super slow
-                slow: Slow
-                regular: Regular
-                fast: Fast
-                super_fast: Super Fast
-                extremely_fast: Extremely Fast
+                super_slow: Sehr langsam
+                slow: Langsam
+                regular: Normal
+                fast: Schnell
+                super_fast: Sehr schnell
+                extremely_fast: Extrem schnell
 
 keybindings:
     title: Tastenkürzel
@@ -691,21 +689,21 @@ keybindings:
     mappings:
         confirm: Bestätigen
         back: Zurück
-        mapMoveUp: Move Up
-        mapMoveRight: Move Right
-        mapMoveDown: Move Down
-        mapMoveLeft: Move Left
-        centerMap: Center Map
+        mapMoveUp: Nach oben
+        mapMoveRight: Nach rechts
+        mapMoveDown: Nach unten
+        mapMoveLeft: Nach links
+        centerMap: Zentrieren
 
-        mapZoomIn: Zoom in
-        mapZoomOut: Zoom out
-        createMarker: Create Marker
+        mapZoomIn: Reinzoomen
+        mapZoomOut: Rauszoomen
+        createMarker: Marker erstellen
 
         menuOpenShop: Upgrades
-        menuOpenStats: Statistics
+        menuOpenStats: Statistiken
 
-        toggleHud: Toggle HUD
-        toggleFPSInfo: Toggle FPS and Debug Info
+        toggleHud: HUD Ein- und Ausblenden
+        toggleFPSInfo: FPS and Debug Info Ein- und Ausblenden
         belt: *belt
         splitter: *splitter
         underground_belt: *underground_belt
@@ -717,24 +715,24 @@ keybindings:
         painter: *painter
         trash: *trash
 
-        abortBuildingPlacement: Abort Placement
-        rotateWhilePlacing: Rotate
+        abortBuildingPlacement: Plazierung abbrechen
+        rotateWhilePlacing: Rotieren
         rotateInverseModifier: >-
-            Modifier: Rotate CCW instead
-        cycleBuildingVariants: Cycle Variants
-        confirmMassDelete: Confirm Mass Delete
-        cycleBuildings: Cycle Buildings
+            Modifier: gegen den uhrzeigersinn rotieren
+        cycleBuildingVariants: Varianten durchschalten
+        confirmMassDelete: Bestätige Massenenlöschen
+        cycleBuildings: Gebäude durchschalten
 
-        massSelectStart: Hold and drag to start
-        massSelectSelectMultiple: Select multiple areas
-        massSelectCopy: Copy area
+        massSelectStart: Halten und ziehen um zu beginnen
+        massSelectSelectMultiple: markiere mehrere Bereiche
+        massSelectCopy: Kopiere Bereich
 
-        placementDisableAutoOrientation: Disable automatic orientation
-        placeMultiple: Stay in placement mode
-        placeInverse: Invert automatic belt orientation
-        pasteLastBlueprint: Paste last blueprint
-        massSelectCut: Cut area
-        exportScreenshot: Export whole Base as Image
+        placementDisableAutoOrientation: Automatische Ausrichtung abschalten
+        placeMultiple: im Plazierungsmodus bleiben
+        placeInverse: Invertiere automatische Fließbandausrichtung
+        pasteLastBlueprint: Letzten Blueprint einfügen
+        massSelectCut: Bereich ausschneiden
+        exportScreenshot: Ganze Basis als Bild exportieren
 
 about:
     title: Über dieses Spiel
